@@ -1,0 +1,19 @@
+@import "src/styles/variable";
+
+.container {
+  .header {
+    color: #ffffff;
+    padding: 16px 24px;
+    background: linear-gradient($primary-dark, $primary-light);
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+
+      .menu {margin-right: 16px;}
+
+      .text {line-height: 20px;}
+    }
+  }
+}
