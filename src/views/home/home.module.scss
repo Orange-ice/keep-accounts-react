@@ -3,10 +3,10 @@
 .container {
   .header {
     color: #ffffff;
-    padding: 16px 24px;
     background: linear-gradient($primary-dark, $primary-light);
 
     .title {
+      padding: 16px 16px 0 16px;
       display: flex;
       align-items: center;
       font-size: 20px;
@@ -14,6 +14,41 @@
       .menu {margin-right: 16px;}
 
       .text {line-height: 20px;}
+    }
+
+    .tabs {
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        padding: 12px 16px;
+      }
+
+      .selected {
+        color: darken($primary-light, 30%);
+        border-bottom: 3px solid darken($primary-light, 30%);
+      }
+    }
+  }
+
+  .total {
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+    background: #252a43;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #ffffff;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.income {color: #fc7174;}
+
+      &.expend {color: #53a867;}
     }
   }
 }
